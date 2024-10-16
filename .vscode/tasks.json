@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "rbxtsc"
+		},
+		{
+			"type": "shell",
+			"command": "rojo build --output ${workspaceFolderBasename}.rbxl",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"label": "rojo: build"
+		},
+		{
+			"label": "all: build",
+			"dependsOrder": "sequence",
+			"dependsOn": ["npm: build", "rojo: build"],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			}
+		}
+	]
+}

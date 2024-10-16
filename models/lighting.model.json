@@ -1,0 +1,74 @@
+{
+	"ClassName": "Lighting",
+	"Properties": {
+		"Ambient": [0.2745098039215686, 0.2745098039215686, 0.2745098039215686],
+		"Brightness": 3,
+		"EnvironmentDiffuseScale": 1,
+		"EnvironmentSpecularScale": 1,
+		"GlobalShadows": true,
+		"OutdoorAmbient": [0.2745098039215686, 0.2745098039215686, 0.2745098039215686],
+		"ShadowSoftness": 0.2,
+		"Outlines": false,
+		"Technology": "Future"
+	},
+	"Children": [
+		{
+			"ClassName": "Atmosphere",
+			"Properties": {
+				"Density": 0.3,
+				"Offset": 0.25,
+				"Color": [0.7803921568627451, 0.7803921568627451, 0.7803921568627451],
+				"Decay": [0.4156862745098039, 0.4392156862745098, 0.4901960784313725],
+				"Glare": 0,
+				"Haze" : 0
+			}
+		},
+		{
+			"ClassName": "Sky",
+			"Properties": {
+				"CelestialBodiesShown": true,
+				"MoonAngularSize": 11,
+				"MoonTextureId": "rbxassetid://6444320592",
+				"SkyboxBk": "rbxassetid://6444884337",
+				"SkyboxDn": "rbxassetid://6444884785",
+				"SkyboxFt": "rbxassetid://6444884337",
+				"SkyboxLf": "rbxassetid://6444884337",
+				"SkyboxRt": "rbxassetid://6444884337",
+				"SkyboxUp": "rbxassetid://6412503613",
+				"StarCount": 3000,
+				"SunAngularSize": 11,
+				"SunTextureId": "rbxassetid://6196665106"
+			}
+		},
+		{
+			"Name": "Bloom",
+			"ClassName": "BloomEffect",
+			"Properties": {
+				"Enabled": true,
+				"Intensity": 1,
+				"Size": 24,
+				"Threshold": 2
+			}
+		},
+		{
+			"Name": "DepthOfField",
+			"ClassName": "DepthOfFieldEffect",
+			"Properties": {
+				"Enabled": true,
+				"FarIntensity": 0.1,
+				"FocusDistance": 0.05,
+				"InFocusRadius": 30,
+				"NearIntensity": 0.75
+			}
+		},
+		{
+			"Name": "SunRays",
+			"ClassName": "SunRaysEffect",
+			"Properties": {
+				"Enabled": true,
+				"Intensity": 0.01,
+				"Spread": 0.1
+			}
+		}
+	]
+}
