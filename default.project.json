@@ -29,6 +29,10 @@
 		},
 		"StarterPlayer": {
 			"$className": "StarterPlayer",
+			"$properties": {
+				"CharacterUseJumpPower": false,
+				"CameraMaxZoomDistance": 128
+			},
 			"StarterPlayerScripts": {
 				"$className": "StarterPlayerScripts",
 				"TS": {
@@ -55,6 +59,18 @@
 				"RespectFilteringEnabled": true
 			}
 		},
-		"Lighting": {"$path": "models/lighting.model.json"}
+		"Lighting": {"$path": "models/lighting.model.json"},
+		"TextChatService": {
+			"$className": "TextChatService",
+			"$properties": {
+				"ChatVersion": "TextChatService"
+			}
+		},
+		"MaterialService": {
+			"$className": "MaterialService",
+			"$properties": {
+				"Use2022Materials": true
+			}
+		}
 	}
 }
