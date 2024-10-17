@@ -43,9 +43,17 @@
 		"Workspace": {
 			"$className": "Workspace",
 			"$properties": {
-				"FilteringEnabled": true
+				"FilteringEnabled": true,
+				"PhysicsSteppingMethod": "Fixed",
+				"StreamingEnabled": true,
+				"StreamingIntegrityMode": "PauseOutsideLoadedArea",
+				"StreamingMinRadius": 500,
+				"StreamingTargetRadius": 500,
+				"ModelStreamingBehavior": "Improved",
+				"StreamOutBehavior": "Opportunistic"
 			},
-			"Zone0": {"$path": "models/welcome-zone.rbxm"}
+			"Zone0": {"$path": "models/welcome-zone.rbxm"},
+			"Zone255": {"$path": "models/test-zone.rbxm"}
 		},
 		"HttpService": {
 			"$className": "HttpService",
